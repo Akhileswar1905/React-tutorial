@@ -1,13 +1,45 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Quicksand:wght@500&display=swap");
+* {
+  font-size: 23px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand", sans-serif;
+  color: #eee;
+}
+body {
+  background-color: black;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #817c7c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: rgb(253, 253, 101);
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar .links a {
+  font-size: 0.85em;
+  color: #b89a9a;
+  margin-left: 16px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.content {
+  margin: 40px auto;
+  padding: 20px;
 }
