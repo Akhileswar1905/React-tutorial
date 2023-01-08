@@ -13,7 +13,12 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  margin-top: 20px;
   border-bottom: 1px solid #817c7c;
+}
+
+.navbar:hover {
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 11px 40px 3px;
 }
 
 .navbar h1 {
@@ -54,4 +59,10 @@ body {
 .inner,
 .outer {
   margin-top: 12px;
+}
+
+.skillBox:hover {
+  padding: 10px;
+  box-shadow: rgba(247, 248, 249, 0.12) 0px 2px 4px 0px,
+    rgba(250, 251, 252, 0.32) 0px 2px 16px 0px;
 }
