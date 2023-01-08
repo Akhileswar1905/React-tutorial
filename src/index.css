@@ -62,7 +62,8 @@ body {
 }
 
 .skillBox:hover {
-  padding: 10px;
+  position: static;
+  padding: 12px;
   box-shadow: rgba(247, 248, 249, 0.12) 0px 2px 4px 0px,
     rgba(250, 251, 252, 0.32) 0px 2px 16px 0px;
 }
