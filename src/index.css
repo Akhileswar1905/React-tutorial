@@ -43,3 +43,19 @@ body {
   margin: 40px auto;
   padding: 20px;
 }
+
+.skillBox {
+  /* background-color: #817c7c; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.inner,
+.outer {
+  margin-top: 12px;
+}
+
+.co {
+  margin-left: 20px;
+}
