@@ -56,6 +56,10 @@ body {
   margin-top: 20px;
 }
 
+.skillBox p {
+  font-size: 22px;
+}
+
 .inner,
 .outer {
   margin-top: 12px;
@@ -63,7 +67,7 @@ body {
 
 .skillBox:hover {
   position: static;
-  padding: 12px;
+  padding: 20px;
   box-shadow: rgba(247, 248, 249, 0.12) 0px 2px 4px 0px,
     rgba(250, 251, 252, 0.32) 0px 2px 16px 0px;
 }

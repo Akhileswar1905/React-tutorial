@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Skillset from "./Skillset";
 
 const Home = () => {
   const [skills, setSkills] = useState([
@@ -6,33 +7,22 @@ const Home = () => {
     { skill: "Data Structures and Algorithms", percentage: 70, id: 2 },
     { skill: "Java", percentage: 90, id: 3 },
     { skill: "Python", percentage: 95, id: 4 },
+    { skill: "HTML", percentage: 88, id: 5 },
+    { skill: "CSS", percentage: 88, id: 6 },
+    { skill: "JavaScript", percentage: 84, id: 7 },
   ]);
+
+  const handleDelete = (id) => {
+    const newSet = skills.filter((skill) => skill.id !== id);
+    setSkills(newSet);
+  };
   return (
     <div className="home">
-      {skills.map((s) => (
-        <div className="skillBox" key={s.id}>
-          <p className="name">{s.skill}</p>
-          <div className="co">
-            <div
-              className="outer"
-              style={{
-                width: "1000px",
-                height: "5px",
-                backgroundColor: "white",
-              }}
-            >
-              <div
-                className="inner"
-                style={{
-                  width: s.percentage * 10,
-                  height: "5px",
-                  backgroundColor: "red",
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      ))}
+      <Skillset
+        skillset={skills}
+        title="My Skills"
+        handleDelete={handleDelete}
+      ></Skillset>
     </div>
   );
 };
