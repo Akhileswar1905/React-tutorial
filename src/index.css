@@ -1,73 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
 * {
-  font-size: 23px;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
-  color: #eee;
-}
-body {
-  background-color: black;
+  font-family: "Quicksand";
+  color: #333;
 }
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
+  max-width: 600px;
   margin: 0 auto;
-  margin-top: 20px;
-  border-bottom: 1px solid #817c7c;
+  border-bottom: 1px solid #f2f2f2;
 }
-
-.navbar:hover {
-  box-shadow: rgba(255, 255, 255, 0.56) 0px 11px 40px 3px;
-}
-
 .navbar h1 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.4em;
-  cursor: pointer;
-  color: rgb(253, 253, 101);
+  color: #f1356d;
 }
-
 .navbar .links {
   margin-left: auto;
 }
-
-.navbar .links a {
-  font-size: 0.85em;
-  color: #b89a9a;
+.navbar a {
   margin-left: 16px;
-  padding: 3px;
   text-decoration: none;
+  padding: 6px;
 }
-
 .navbar a:hover {
-  color: white;
+  color: #f1356d;
 }
-
 .content {
+  max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
 
-.skillBox {
-  /* background-color: #817c7c; */
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
 }
-
-.skillBox p {
-  font-size: 22px;
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-.inner,
-.outer {
-  margin-top: 12px;
-}
-
-.skillBox:hover {
-  position: static;
-  padding: 20px;
-  box-shadow: rgba(247, 248, 249, 0.12) 0px 2px 4px 0px,
-    rgba(250, 251, 252, 0.32) 0px 2px 16px 0px;
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
 }

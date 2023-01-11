@@ -1,16 +1,22 @@
-const NavBar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Portfolio</h1>
+      <h1>The Dojo Blog</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a href="/">Intro</a>
-        <a href={"https://www.linkedin.com/in/akhileswar-sathivada-243b66237/"}>
-          LinkedIn
+        <a
+          href="/create"
+          style={{
+            color: "white",
+            backgroundColor: "#f1356d",
+            borderRadius: "8px",
+          }}
+        >
+          New Blog
         </a>
       </div>
     </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
